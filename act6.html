@@ -1,0 +1,48 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Hello, World! Activity 6</title>
+
+		<script>
+			var selected="1";
+
+			function changeBGcolor(){
+
+				//selected=window.prompt("Select a background color:\n" + "0 (white), 1 (teal), 2 (lavender), or 3(yellow)", "1");
+				switch(selected){
+
+					case ("1"):
+					document.body.style.backgroundColor="#99ffff";
+					break;
+
+					case ("2"):
+					document.body.style.backgroundColor="#ff99ff";
+					break;
+
+					case ("3"):
+					document.body.style.backgroundColor="#ffff99";
+					break;
+
+					default:
+					document.body.style.backgroundColor="white";
+					break;
+
+
+
+				}
+			}
+		</script>
+
+	</head>
+
+	<body>
+		<form name="userinput" id="userinput">
+		<input type="button" onClick="changeBGcolor()" value="Click here!" /><br/>
+		<input type="radio" name="pickColor" id="pickColor" onClick="selected='0'"/>white<br/>
+		<input type="radio" name="pickColor" id="pickColor" onClick="selected='1'" checked="checked"/>Teal<br/>
+		<input type="radio" name="pickColor" id="pickColor" onClick="selected='2'"/>Lavender<br/>
+		<input type="radio" name="pickColor" id="pickColor" onClick="selected='3'"/>Yellow<br/>
+	    </form>
+	</body>
+</hmtl>
+
